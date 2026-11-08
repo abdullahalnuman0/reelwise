@@ -182,7 +182,7 @@ The Android application's source code and build configuration are **not included
 
 **Abdullah Al Numan** — Android Developer
 
-- **Email:** [abdullahalnuman.dev@gmail.com](mailto:abdullahalnuman.dev@gmail.com)
+- **Email:** [abdullahalnumanb@gmail.com](mailto:abdullahalnumanb@gmail.com)
 - **GitHub:** [github.com/abdullahalnuman0](https://github.com/abdullahalnuman0)
 - **Portfolio:** [abdullahalnuman0.github.io](https://abdullahalnuman0.github.io)
 - **Project repository:** [github.com/abdullahalnuman0/reelwise](https://github.com/abdullahalnuman0/reelwise)
