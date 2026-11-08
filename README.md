@@ -4,9 +4,9 @@
 
 ### Understand your scrolling. Set limits. Build better digital habits.
 
-An Android app that helps you become more aware of your short-form video consumption by counting supported reels and Shorts, setting daily limits, and tracking your progress.
+ReelWise is an Android app that helps you understand and manage short-form video scrolling. It counts supported Reels and Shorts, lets you set daily limits, and turns your activity into useful insights.
 
-[![Google Play](https://img.shields.io/badge/Google_Play-Download-34A853?style=for-the-badge&logo=googleplay&logoColor=white)](https://play.google.com/store/apps/details?id=com.dvexo.reelguard)
+[![Get it on Google Play](https://img.shields.io/badge/Get_it_on-Google_Play-414141?style=for-the-badge&logo=googleplay&logoColor=white)](https://play.google.com/store/apps/details?id=com.dvexo.reelguard)
 [![Kotlin](https://img.shields.io/badge/Kotlin-2C2C2C?style=for-the-badge&logo=kotlin&logoColor=7F52FF)](https://kotlinlang.org/)
 [![Android](https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com/)
 [![Jetpack Compose](https://img.shields.io/badge/UI-Jetpack%20Compose-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white)](https://developer.android.com/compose)
@@ -17,52 +17,55 @@ An Android app that helps you become more aware of your short-form video consump
 
 ## About the Project
 
-**ReelWise** is an Android utility designed to help people understand and manage their short-form video scrolling habits. It automatically counts supported short-video feed activity, lets users define daily limits, and turns their activity into useful progress and statistics.
+**ReelWise: Reels Counter** is an Android utility for people who want to be more intentional about short-form video consumption. Instead of tracking only screen time, ReelWise focuses on the number of short-form videos viewed and helps users understand their scrolling patterns.
 
-Instead of relying only on screen-time estimates, ReelWise focuses on the number of short-form videos viewed. Users can monitor their habits, set realistic goals, receive limit reminders, and work toward more intentional social-media use.
+| Project information | Details |
+|---|---|
+| App name | ReelWise: Reels Counter |
+| Android package | `com.dvexo.reelguard` |
+| Primary language | Kotlin |
+| UI toolkit | Jetpack Compose |
+| Distribution | Google Play |
+| Repository | [github.com/abdullahalnuman0/reelwise](https://github.com/abdullahalnuman0/reelwise) |
+| App download | [Google Play listing](https://play.google.com/store/apps/details?id=com.dvexo.reelguard) |
 
-- **App name:** ReelWise: Reels Counter
-- **Android package:** `com.dvexo.reelguard`
-- **Current app version:** `1.1.1` (`versionCode 11`)
-- **Minimum Android version:** Android 8.0 (API 26)
-- **Target / compile SDK:** API 37
-- **Repository:** [github.com/abdullahalnuman0/reelwise](https://github.com/abdullahalnuman0/reelwise)
-- **Google Play:** [Download ReelWise](https://play.google.com/store/apps/details?id=com.dvexo.reelguard)
+This GitHub repository is a public project showcase and documentation repository. It does not contain the Android application's source code.
 
 ## Key Features
 
-### Automatic Reel & Shorts Counting
+### Automatic Reels & Shorts Counting
 
-Uses Android's `AccessibilityService` to recognize supported short-form video feed activity in enabled apps and maintain platform-specific counts.
+ReelWise uses Android's `AccessibilityService` to recognize supported short-form video feed activity in enabled apps and maintain platform-specific counts. Accessibility access must be enabled by the user in Android Settings.
 
-### Daily Limits and Reminders
+### Daily Limits and Feed Controls
 
-- Set a daily viewing limit for supported platforms.
-- Choose how ReelWise responds when a limit is reached.
-- Receive a reminder or use the available feed-blocking option, depending on the selected settings.
+- Set daily short-video limits for supported platforms.
+- Choose to receive a reminder when a limit is reached.
+- Use the available feed-blocking option to help stop further short-form scrolling after reaching a limit.
+- Review your progress against your daily limits.
 
 ### Insights and Activity History
 
-- Review daily and historical counts.
-- Compare activity across supported platforms.
-- Explore scrolling trends and progress over time.
-- See how your usage changes as you work toward your goals.
+- Review daily and historical reel counts.
+- Compare activity across platforms.
+- Explore scrolling patterns and trends over time.
+- Track progress toward more intentional scrolling habits.
 
 ### Goals, Streaks, and Challenges
 
-Build consistency with personal goals, streak tracking, and challenges that encourage more intentional scrolling habits.
+Set personal goals, build streaks, and take on challenges that encourage more consistent digital habits.
 
 ### Leaderboards
 
-Explore aggregate rankings and compare progress with other users where the optional Firebase-backed leaderboard service is configured and available.
+Where the optional account and cloud features are configured and available, users can compare aggregate progress through leaderboard and ranking features.
 
-### Local Data and Optional Account Features
+### Optional Accounts
 
-Core counting and app features are designed to work without signing in to social-media platforms. Optional ReelWise account features provide authentication and cloud-backed statistics or leaderboard functionality where enabled.
+ReelWise can provide optional account features using Firebase Authentication, including supported sign-in options. Core counting does not require users to sign in to Instagram, Facebook, TikTok, Snapchat, or YouTube.
 
 ## Supported Platforms
 
-ReelWise is designed to count short-form video activity on the following platforms:
+ReelWise is designed to count short-form video activity on these platforms:
 
 | Platform | Supported content |
 |---|---|
@@ -72,34 +75,38 @@ ReelWise is designed to count short-form video activity on the following platfor
 | Snapchat | Spotlight |
 | YouTube | YouTube Shorts |
 
-> **Compatibility note:** Counting depends on the relevant app's interface, accessibility events, Android version, and the version of each third-party app. Platform updates may affect detection or availability.
+> **Compatibility note:** Detection depends on the relevant app's interface, accessibility events, Android version, and the version of each third-party app. Updates to third-party apps may affect detection or availability.
 
-ReelWise is an independent utility. It is not affiliated with, sponsored by, endorsed by, or officially connected to Meta, Instagram, Facebook, TikTok, Snap Inc., Snapchat, Google, or YouTube. All product names and trademarks belong to their respective owners.
+ReelWise is an independent utility. It is not affiliated with, sponsored by, endorsed by, or officially connected to Meta, Facebook, Instagram, TikTok, Snap Inc., Snapchat, Google, or YouTube. All product names and trademarks belong to their respective owners.
 
 ## Screenshots
 
-Screenshots for this repository are intended to be stored in [`assets/screenshot/`](assets/screenshot/). The folder is currently a placeholder. Add the latest app screenshots there (for example, `dashboard.png`, `insights.png`, `limits.png`, and `leaderboard.png`), then enable and update the gallery snippet below to match the actual filenames.
-
-<!--
-After adding the image files, uncomment and update this gallery to match their actual names.
+The screenshots below are stored in [`assets/screenshot/`](assets/screenshot/).
 
 <p align="center">
-  <img src="assets/screenshot/dashboard.png" width="190" alt="ReelWise dashboard" />
-  <img src="assets/screenshot/insights.png" width="190" alt="ReelWise insights" />
-  <img src="assets/screenshot/limits.png" width="190" alt="ReelWise daily limits" />
-  <img src="assets/screenshot/leaderboard.png" width="190" alt="ReelWise leaderboard" />
+  <img src="assets/screenshot/dashboard.png" width="180" alt="ReelWise dashboard showing today's reel count and platform limits" />
+  <img src="assets/screenshot/insights.png" width="180" alt="ReelWise insights showing platform breakdown, scrolling times, and progress" />
+  <img src="assets/screenshot/limits.png" width="180" alt="ReelWise settings for daily reel limits and limit actions" />
+  <img src="assets/screenshot/leaderboard.png" width="180" alt="ReelWise leaderboard and user rankings" />
 </p>
--->
+
+<p align="center">
+  <sub>Dashboard</sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <sub>Insights</sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <sub>Daily Limits</sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <sub>Leaderboard</sub>
+</p>
 
 ## How It Works
 
-1. **Accessibility-based detection:** After the user enables the required Android Accessibility permission, ReelWise processes relevant accessibility events from supported apps to recognize short-form feed activity.
-2. **Counting and tracking:** Recognized activity is used to update the user's reel and Shorts counts, platform breakdowns, limits, and progress.
-3. **On-device persistence:** Room provides the local database layer for app data and history.
-4. **Optional cloud features:** Firebase Authentication and Firebase Realtime Database support account-related and leaderboard/statistics features when configured.
-5. **Advertising and consent:** Google Mobile Ads provides advertising, while Google's User Messaging Platform (UMP) supports consent flows where applicable.
+1. **Enable Accessibility access:** The user explicitly enables ReelWise's AccessibilityService in Android Settings. This is required for automatic counting.
+2. **Recognize feed activity:** ReelWise processes relevant accessibility events from supported apps to recognize short-form feed activity.
+3. **Update counts and progress:** Recognized activity updates counts, platform breakdowns, daily limits, history, and progress.
+4. **Store app data:** Room provides local database storage for supported app data and history.
+5. **Use optional cloud features:** Firebase Authentication and Firebase Realtime Database support optional account-related and leaderboard/statistics features when configured.
+6. **Show ads and consent messages:** Google Mobile Ads provides in-app advertising, while Google's User Messaging Platform (UMP) supports consent messages where applicable.
 
-ReelWise does not need users' Instagram, Facebook, TikTok, Snapchat, or YouTube passwords. The counting feature is not designed to upload screenshots, screen recordings, video/audio files, captions, comments, direct messages, or the general content of the social-media apps being monitored.
+ReelWise does not need users' social-media passwords and does not sign in to those third-party services on their behalf. The counting feature is designed to recognize scrolling activity; it is not intended to upload screenshots, screen recordings, video or audio files, captions, comments, direct messages, or the general content displayed in monitored social-media apps.
 
 ## Technology Stack
 
@@ -107,9 +114,9 @@ ReelWise does not need users' Instagram, Facebook, TikTok, Snapchat, or YouTube 
 |---|---|
 | **Kotlin** | Primary application language |
 | **Jetpack Compose** | Declarative Android UI |
-| **Material 3** | UI components and visual design system |
+| **Material 3** | UI components and design system |
 | **Navigation Compose** | In-app navigation |
-| **AndroidX Lifecycle & ViewModel** | Lifecycle-aware UI state integration |
+| **AndroidX Lifecycle & ViewModel** | Lifecycle-aware UI state management |
 | **Room** | Local database and persistence |
 | **KSP** | Room code generation |
 | **WorkManager** | Scheduled and deferrable background work |
@@ -117,37 +124,16 @@ ReelWise does not need users' Instagram, Facebook, TikTok, Snapchat, or YouTube 
 | **Firebase Authentication** | Optional anonymous, email/password, and Google sign-in flows |
 | **Firebase Realtime Database** | Optional cloud-backed leaderboard/statistics features |
 | **Android Credential Manager + Google ID** | Google sign-in integration |
-| **Google Mobile Ads SDK (Next-Gen)** | In-app advertising |
-| **Google User Messaging Platform (UMP)** | Advertising consent messages |
+| **Google Mobile Ads SDK** | In-app advertising |
+| **Google User Messaging Platform (UMP)** | Advertising consent messages where applicable |
 | **JUnit, AndroidX Test, Espresso, Compose UI Test, Room Testing** | Unit and Android instrumentation testing |
 | **Gradle Kotlin DSL** | Android build configuration |
-
-## Android & Build Configuration
-
-The current Android application configuration includes:
-
-| Setting | Value |
-|---|---|
-| Application ID | `com.dvexo.reelguard` |
-| Minimum SDK | `26` (Android 8.0) |
-| Compile SDK | `37` |
-| Target SDK | `37` |
-| Version name | `1.1.1` |
-| Version code | `11` |
-| Java source compatibility | `Java 11` |
-| Java target compatibility | `Java 11` |
-| Release minification | Enabled |
-| Release resource shrinking | Enabled |
-
-Release packaging validates the AdMob app and banner unit IDs. A release build requires real, correctly matched AdMob IDs; Google's demo IDs are reserved for debug/testing builds.
-
-Firebase configuration is optional for building the non-leaderboard parts of the app. When a Firebase configuration file is not present, the rest of the app can still build and run, while the leaderboard reports that Firebase has not been configured. Google Sign-In also requires the appropriate OAuth web client configuration.
 
 ## Privacy & Permissions
 
 ### Accessibility Permission
 
-Automatic counting requires the user to explicitly enable ReelWise's AccessibilityService from Android Settings. This system capability is used to recognize supported short-form feed activity. Users can disable it at any time; automatic counting will stop when access is disabled.
+Automatic counting requires the user to explicitly enable ReelWise's AccessibilityService from Android Settings. The service is used to recognize supported short-form feed activity. Users can disable this access at any time; automatic counting stops when access is disabled.
 
 ### Data Handling
 
@@ -155,17 +141,30 @@ Automatic counting requires the user to explicitly enable ReelWise's Accessibili
 - Optional account features may use Firebase Authentication and cloud services for account-related information and aggregate statistics.
 - ReelWise does not require credentials for third-party social-media accounts.
 - The counting feature is not intended to upload the media or private content displayed inside monitored apps.
-- Google Mobile Ads may process device, advertising, approximate-location, and ad-interaction signals under Google's policies and the user's consent/settings.
+- Google Mobile Ads may process device, advertising, approximate-location, diagnostic, and ad-interaction signals under Google's policies and the user's consent/settings.
 
-Read the full [ReelWise Privacy Policy](https://abdullahalnuman-dev.github.io/reel-wise/).
+For full details, read the [ReelWise Privacy Policy](https://abdullahalnuman-dev.github.io/reel-wise/).
 
-For details about Google's data processing, review the applicable [Google Privacy Policy](https://policies.google.com/privacy) and [Firebase Privacy and Security information](https://firebase.google.com/support/privacy).
+For information about third-party data processing, see the [Google Privacy Policy](https://policies.google.com/privacy) and [Firebase Privacy and Security information](https://firebase.google.com/support/privacy).
+
+## Repository Structure
+
+```text
+reelwise/
+├── README.md
+└── assets/
+    └── screenshot/
+        ├── dashboard.png
+        ├── insights.png
+        ├── limits.png
+        └── leaderboard.png
+```
 
 ## Repository Scope
 
-This repository is a **public documentation and project showcase** for ReelWise. It contains the project README and is intended to hold app screenshots in `assets/screenshot/`.
+This repository is a **public documentation and project showcase** for ReelWise. It contains this README and app screenshots in `assets/screenshot/`.
 
-The Android application's source code is **not included in this repository**. Therefore, this repository is not a clone-and-build distribution of the app.
+The Android application's source code and build configuration are **not included**. As a result, this repository is not a clone-and-build distribution of the app. For the latest published release, refer to the [Google Play listing](https://play.google.com/store/apps/details?id=com.dvexo.reelguard).
 
 ## Download
 
@@ -188,7 +187,7 @@ The Android application's source code is **not included in this repository**. Th
 - **Portfolio:** [abdullahalnuman0.github.io](https://abdullahalnuman0.github.io)
 - **Project repository:** [github.com/abdullahalnuman0/reelwise](https://github.com/abdullahalnuman0/reelwise)
 
-For app support, feedback, or bug reports, please use the support email above or open an issue in this repository.
+For app support, feedback, or bug reports, use the support email above or open an issue in this repository.
 
 ---
 
